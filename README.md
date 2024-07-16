@@ -1,18 +1,15 @@
-## Getting Started
+# Projeto: Sistema de Desconto em Loja utilizando o padrão Strategy
+Este é um projeto simples que demonstra o uso do padrão de projeto Strategy para aplicar diferentes tipos de desconto em uma loja.
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+# Estrutura do Projeto
 
-## Folder Structure
+1. Interface DescontoStrategy: Define um método aplicarDesconto que será implementado por todas as estratégias de desconto.
 
-The workspace contains two folders by default, where:
+2. Classes Concretas: DescontoNovoCliente, DescontoClienteFiel, DescontoClienteVIP, DescontoAniversariante e DescontoSazonal implementam a interface DescontoStrategy e definem diferentes regras de desconto.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+3. Contexto (CarrinhoDeCompras): Utiliza uma estratégia de desconto que pode ser alterada dinamicamente.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+4. Classe Principal (Main): Demonstra a troca de estratégias de desconto em um carrinho de compras.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+ 
+   ---Este é um desafio de projeto da Digital Innovation One---
